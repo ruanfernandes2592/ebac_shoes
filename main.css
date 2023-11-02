@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    margin-bottom: 48px;
+    background-color: #fff;
+}
+
+header{
+    padding: 16px;
+    background-color: #4165c5;
+    color: #ecf0f1;
+    margin: auto;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+    
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto; /* Centralizou o container com margem 0 para top e botton, e margem auto para as laterais */
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 40% 56%;
+    column-gap: 4%;
+    padding: 32px 0;
+}
+
+#img-loja img {
+    width: 100%;
+    box-shadow: 3px 5px 5px rgba(198, 197, 219, 0.8);
+    border-radius: 2%;
+}
+
+h2 {
+    border-bottom: 3px solid #4165c5;
+    color: #4165c5;
+    padding: 12px 0;
+}
+
+.sobre p {
+    padding-top: 38px;
+    font-size: 18px
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 24.875% 24.875% 24.875% 24.875%;
+    column-gap: 0.5%;
+    margin-top: 32px;
+    justify-content: center;
+}
+
+.produtos article {
+    margin: 0 auto;
+    width: 240px;
+    box-shadow: 3px 5px 5px rgba(198, 197, 219, 0.8);
+}
+
+.produtos article, img {
+    width: 100%;
+    border-radius: 2%;
+}
+
+.produtos h3 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+.tenis-modelo {
+    height: 50px;
+    margin-bottom: 5%;
+}
+
+.produtos button {
+    padding: 12px;
+    width: 100%;
+    margin-top: 12px;
+    background-color: #4165c5;
+    color: #ecf0f1;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+}
+
+.produtos a {
+    text-decoration: none;
+    color: black;
+}
+
+.produtos button:hover {
+    cursor: pointer;
+    background-color: #113cb4;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        display: block;
+        width: 90%;
+    }
+
+    #img-loja {
+        text-align: center;
+    }
+
+    #img-loja img {
+        width: 100%;
+    }
+
+    .produtos {
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
+        row-gap: 36px;
+    }
+
+    .produtos article, img {
+        width: 100%
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        display: block;
+        width: 90%;
+    }
+
+    #img-loja {
+        text-align: center;
+    }
+
+    #img-loja img {
+        width: 100%;
+    }
+
+    .produtos {
+        grid-template-columns: 100%;
+        row-gap: 36px;
+    }
+
+    .produtos article, img {
+        width: 100%
+    }
+}
